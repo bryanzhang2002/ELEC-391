@@ -1,0 +1,23 @@
+#WAVEFORM
+#H Name     e391mp2;
+#H PartNo   00;
+#H Date     2023-02-06;
+#H Revision 01;
+#H Designer Engineer;
+#H Company  UBC;
+#H Assembly None;
+#H Location ;
+#H Device   g16v8;
+#H 
+#H 
+#H ORDER: IP0, IP1, IP2, OP0; 
+#H 
+#H 
+#V 0001 000L
+#V 0002 100L
+#V 0003 010H
+#V 0004 110H
+#V 0005 001L
+#V 0006 101H
+#V 0007 011L
+#V 0008 111H

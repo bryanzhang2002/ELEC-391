@@ -1,0 +1,23 @@
+Name     e391mp2;
+PartNo   00;
+Date     2023-02-06;
+Revision 01;
+Designer Engineer;
+Company  UBC;
+Assembly None;
+Location ;
+Device   g16v8;
+
+
+ORDER: IP0, IP1, IP2, OP0; 
+
+
+VECTORS:
+000*
+100*
+010*
+110*
+001*
+101*
+011*
+111*

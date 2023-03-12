@@ -1,0 +1,20 @@
+Name     e391mp2 ;
+PartNo   00 ;
+Date     2023-02-06 ;
+Revision 01 ;
+Designer Engineer ;
+Company  UBC ;
+Assembly None ;
+Location  ;
+Device   g16v8 ;
+
+/* *************** INPUT PINS *********************/
+PIN 2 = IP0                        ; /*                                 */ 
+PIN 3 = IP1                        ; /*                                 */ 
+PIN 4 = IP2                        ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN 19    = OP0                        ; /*                                 */ 
+
+
+OP0 = (IP1 & !IP2) # (IP0 & IP2);

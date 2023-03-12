@@ -1,0 +1,16 @@
+%SIGNAL
+PIN   2 =  IP0 
+PIN   3 =  IP1 
+PIN   4 =  IP2 
+PIN  19 =  OP0 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+OP0 =>
+    IP1 & !IP2
+  # IP0 & IP2
+
+%END

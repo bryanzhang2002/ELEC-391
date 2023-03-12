@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="02/01/23||22:24:43" using="Simscape Multibody Link Version 7.4" from="SolidWorks 30.3.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="simplified" uid="simplified" version="134">
+<AssemblyFile name="simplified.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="mercedes-1" uid="mercedes-1" entityUid="mercedes*:*Default">
+<Transform>
+<Rotation>0.99960109558268406 0.02824269303551067 0 -0.02824269303551067 0.99960109558268406 0 0 0 1</Rotation>
+<Translation>0.015549706132662175 0.075100146321853828 0.017145921168100695</Translation>
+</Transform>
+</Instance>
+<Instance name="shell-1" uid="shell-1" grounded="true" entityUid="shell*:*Default">
+<Transform>
+<Rotation>0.88791844249911489 -0.4600009124664276 0 0.4600009124664276 0.88791844249911489 0 0 0 0.99999999999999978</Rotation>
+<Translation>0.01060920510181056 0.017841486697301023 0.021345921168100693</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="0.25"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="0.25"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="0.25"/>
+<Emissive r="0" g="0" b="0" a="0.25"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="min_motor-1" uid="min_motor-1" entityUid="min_motor*:*Default">
+<Transform>
+<Rotation>-0.87579765993995806 -0.48267842177136333 0 0.48267842177136333 -0.87579765993995806 0 0 0 1</Rotation>
+<Translation>0.010609205101810558 0.017841486697301023 0.022345921168100694</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>min_motor-1</Uid>
+</InstancePath>
+<Position>0 0 0.023500000000000004</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>shell-1</Uid>
+</InstancePath>
+<Position>0 0 0.052999999999999992</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>min_motor-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0071999999999999998</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>mercedes-1</Uid>
+</InstancePath>
+<Position>-0.0033213914957656195 -0.057375351946354958 0.011000000000000003</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mercedes-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>min_motor-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0071999999999999998</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Distance name="Distance2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>min_motor-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>shell-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="mercedes" uid="mercedes*:*Default" version="1612">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="mercedes.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0025911486287044949</Mass>
+<CenterOfMass>-0.0033436990836179827 -0.018391328803083116 0.0014916542821320807</CenterOfMass>
+<Inertia>7.9739671820878815e-07 3.8240334837596013e-07 1.1772191254351223e-06 1.0994600921374721e-10 -7.5348746973824491e-14 2.9043812019610191e-10</Inertia>
+</MassProperties>
+<GeometryFile name="mercedes_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.39803921568627448" g="0.41176470588235292" b="0.46862745098039216" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="min_motor" uid="min_motor*:*Default" version="225">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="min_motor.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.014192174926048335</Mass>
+<CenterOfMass>0 0 0.0096404826341491886</CenterOfMass>
+<Inertia>5.9715433281874439e-07 5.9715433281874439e-07 2.359548313281544e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="min_motor_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.20000000000000001" g="0.20000000000000001" b="0.20000000000000001" a="1"/>
+<Diffuse r="0.20000000000000001" g="0.20000000000000001" b="0.20000000000000001" a="1"/>
+<Specular r="0.10000000000000001" g="0.10000000000000001" b="0.10000000000000001" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="shell" uid="shell*:*Default" version="136">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="shell.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00023686351971005472</Mass>
+<CenterOfMass>0 0 0.020199999999999871</CenterOfMass>
+<Inertia>4.9089714671876923e-08 4.9089714671876896e-08 1.3442249976268216e-08 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="shell_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

@@ -1,0 +1,109 @@
+{COMPONENT C:\USERS\BRYAN\DESKTOP\UBC\THIRD YEAR\2022W2\ELEC 391\MINI PROJECT\E391MP2.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Mon Feb 06 22:43:45 2023 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P IP0 {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P IP1 {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P IP2 {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P OP0 {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 190 110}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   {Pnl 120 30}
+   [Ts 15][Tj "LC"]
+
+   {Sd A 2 3 4 19}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 100 250 0}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 130 20 100 20}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "IP0" 140 80}
+   {T "IP1" 140 60}
+   {T "IP2" 140 40}
+   {T "OP0" 140 20}
+   [Tj "RC"]
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "G16V8S" 190 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\USERS\BRYAN\DESKTOP\UBC\THIRD YEAR\2022W2\ELEC 391\MINI PROJECT\E391MP2 190 100}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N IP0
+   }
+   {N IP1
+   }
+   {N IP2
+   }
+   {N OP0
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}

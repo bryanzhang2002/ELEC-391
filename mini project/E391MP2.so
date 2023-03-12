@@ -1,0 +1,35 @@
+CSIM(WM): CUPL Simulation Program
+Version 5.0a Serial# 
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+CREATED Mon Feb 20 15:04:53 2023
+
+LISTING FOR SIMULATION FILE: E391MP2.si
+
+   1: Name     e391mp2;
+   2: PartNo   00;
+   3: Date     2023-02-06;
+   4: Revision 01;
+   5: Designer Engineer;
+   6: Company  UBC;
+   7: Assembly None;
+   8: Location ;
+   9: Device   g16v8;
+  10: 
+  11: 
+  12: ORDER: IP0, IP1, IP2, OP0; 
+  13: 
+  14: 
+
+=============
+      IIIO   
+      PPPP   
+      0120   
+=============
+0001: 000L
+0002: 100L
+0003: 010H
+0004: 110H
+0005: 001L
+0006: 101H
+0007: 011L
+0008: 111H
